@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kirol · 个人主站</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23050505'/%3E%3Ccircle cx='10' cy='12' r='2.6' fill='%23fff'/%3E%3Ccircle cx='21' cy='9' r='2.6' fill='%23fff'/%3E%3Ccircle cx='19' cy='21' r='2.6' fill='%23fff'/%3E%3Cline x1='12' y1='13' x2='18.6' y2='9.8' stroke='%23fff' stroke-width='0.8'/%3E%3Cline x1='19.8' y1='11.4' x2='17.6' y2='18.8' stroke='%23fff' stroke-width='0.8'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#050505;--ink:#f4f4f4;--dim:rgba(255,255,255,.55);
+    --faint:rgba(255,255,255,.30);--line:rgba(255,255,255,.16);
+    --line-strong:rgba(255,255,255,.38);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    background:var(--bg);color:var(--ink);
+    font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    font-weight:300;-webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+    background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1.4px);
+    background-size:34px 34px;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:760px;margin:0 auto;padding:96px 28px 56px;min-height:100vh;display:flex;flex-direction:column}
+  .brand{letter-spacing:.3em;font-size:12px;color:var(--faint);text-indent:.3em}
+  h1{font-size:52px;font-weight:200;letter-spacing:.12em;margin-top:22px;line-height:1.15}
+  .sub{margin-top:16px;font-size:15px;line-height:2;color:var(--dim);letter-spacing:.06em;max-width:560px}
+  .projects{margin-top:64px}
+  .projects h2{font-size:12px;font-weight:400;letter-spacing:.3em;color:var(--faint);padding-bottom:14px;border-bottom:1px solid var(--line)}
+  .card{
+    display:flex;align-items:center;gap:22px;justify-content:space-between;
+    margin-top:18px;padding:22px 24px;border:1px solid var(--line);border-radius:14px;
+    background:rgba(255,255,255,.025);transition:border-color .25s,background .25s;
+  }
+  .card:hover{border-color:var(--line-strong);background:rgba(255,255,255,.05)}
+  .card-t h3{font-size:18px;font-weight:400;letter-spacing:.08em}
+  .card-t p{margin-top:7px;font-size:12.5px;color:var(--dim);letter-spacing:.04em;line-height:1.8}
+  .card-a{flex:none;font-size:11px;letter-spacing:.18em;color:var(--dim);border:1px solid var(--line);border-radius:999px;padding:9px 18px;white-space:nowrap;transition:color .25s,border-color .25s}
+  .card:hover .card-a{color:#fff;border-color:var(--line-strong)}
+  .links{margin-top:30px;display:flex;gap:10px}
+  .links a{font-size:11px;letter-spacing:.18em;color:var(--faint);border:1px solid var(--line);border-radius:999px;padding:8px 16px;transition:color .25s,border-color .25s}
+  .links a:hover{color:#fff;border-color:var(--line-strong)}
+  footer{margin-top:auto;padding-top:72px;font-size:10.5px;letter-spacing:.2em;color:var(--faint)}
+  @media (max-width:560px){
+    h1{font-size:38px}
+    .wrap{padding:72px 20px 48px}
+    .card{flex-direction:column;align-items:flex-start;gap:14px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">KIROL · PERSONAL WEB</div>
+  <h1>Kirol</h1>
+  <p class="sub">一个热爱读书、科技与创造的人。这里收录我构建的项目与作品——每个节点都是一段成长的旅程。</p>
+
+  <div class="projects">
+    <h2>PROJECTS</h2>
+    <a class="card" href="https://kirol999.github.io/ReadingNeuralWeb/">
+      <div class="card-t">
+        <h3>Reading Neural Web</h3>
+        <p>3D 读书成长历程可视化 · 每本书一个光点，关联成神经网络<br>拖拽旋转 · 右键设旋转中心 · 悬停看书名</p>
+      </div>
+      <span class="card-a">访问站点</span>
+    </a>
+    <div class="links">
+      <a href="https://github.com/Kirol999">GitHub</a>
+      <a href="https://github.com/Kirol999/ReadingNeuralWeb">项目源码</a>
+    </div>
+  </div>
+
+  <footer>© 2026 KIROL</footer>
+</div>
+</body>
+</html>
